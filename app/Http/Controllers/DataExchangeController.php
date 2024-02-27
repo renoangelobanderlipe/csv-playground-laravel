@@ -130,6 +130,7 @@ class DataExchangeController extends Controller
       'processedjob' => $batch->processedJobs(),
       'totalJobs' => $batch->totalJobs,
       'batch' => $batch,
+      'percentage' => "{$batch->progress()} %",
     ];
   }
 }
